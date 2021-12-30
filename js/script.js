@@ -79,7 +79,7 @@ while(deck.findIndex((card) => card === 'As') !== deck.findIndex((card) => card 
 console.log(`It took ${shuffleNumber} shuffles for the top card and the bottom card to touch`)
 
 /*
-FIND THE NUMBER OF SHUFFLES TO SHUFFLE THE TOP CARD BACK TO THE TOP OF THE DECK
+FIND THE NUMBER OF SHUFFLES TO SHUFFLE THE TOP CARD TO THE BOTTOM OF THE DECK
 */
 
 resetDeck()
