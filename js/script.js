@@ -83,12 +83,10 @@ FIND THE NUMBER OF SHUFFLES TO SHUFFLE THE TOP CARD BACK TO THE TOP OF THE DECK
 */
 
 resetDeck()
-//shuffle once to remove the top card from the top of the deck and set up a variable to track the number of shuffles
-perfectShuffle(1)
-let shuffleCount = 1;
-//loop single shuffles until the As returns to index position 0 (top of the deck) iterate the count after each shuffle to track the number of shuffles
-while(deck.findIndex((card) => card === 'As') !== 0){
+let shuffleCount = 0;
+//loop single shuffles until the As moves to index position 51 (bottom of the deck) iterate the count after each shuffle to track the number of shuffles
+while(deck.findIndex((card) => card === 'As') !== 51){
     perfectShuffle(1)
     shuffleCount++
 }
-console.log(`It took ${shuffleCount} shuffles for the top card to make it back to the top of the deck`)
+console.log(`It took ${shuffleCount} shuffles for the top card to move to the bottom of the deck`)
